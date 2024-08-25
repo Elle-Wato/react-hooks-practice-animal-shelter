@@ -26,7 +26,7 @@ function App() {
      });
 
   }
-
+  
   function handleAdoptPet(id) {
     const updatedPets = pets.map((pet)=> {
       return pet.id === id ? { ...pet, isAdopted: true } : pet;
@@ -53,7 +53,7 @@ function App() {
           </div>
           <div className="twelve wide column">
             <PetBrowser />
-            <PetBrowser pets={pets} />
+            <PetBrowser pets={pets} onAdoptPet={handleAdoptPet}/>
           </div>
         </div>
       </div>
