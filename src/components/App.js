@@ -14,7 +14,7 @@ function App() {
   }
 
   function handleFindPetsClick(){
-    let url = "http://localhost:3000/pets";
+    let url = "http://localhost:3001/pets";
 
     if (filters.type !== "all") {
       url += `?type=${filters.type}`;
